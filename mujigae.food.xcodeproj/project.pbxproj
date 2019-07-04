@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F5E13DD28F7B4496D018084 /* Pods_mujigae_food.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0BA390B83745BF511419D2 /* Pods_mujigae_food.framework */; };
 		E6437ED722CCE7D500D701D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6437ED622CCE7D500D701D2 /* AppDelegate.swift */; };
 		E6437ED922CCE7D500D701D2 /* FavouriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6437ED822CCE7D500D701D2 /* FavouriteController.swift */; };
-		E6437EDC22CCE7D500D701D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6437EDA22CCE7D500D701D2 /* Main.storyboard */; };
 		E6437EDE22CCE7D800D701D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6437EDD22CCE7D800D701D2 /* Assets.xcassets */; };
 		E6437EE122CCE7D800D701D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6437EDF22CCE7D800D701D2 /* LaunchScreen.storyboard */; };
 		E6437EED22CCFB6C00D701D2 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6437EEC22CCFB6C00D701D2 /* BaseView.swift */; };
@@ -30,13 +30,16 @@
 		E6E7725B22CDB7CE00F7C9CD /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E7725A22CDB7CE00F7C9CD /* MenuItem.swift */; };
 		E6E7725D22CDB9DE00F7C9CD /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E7725C22CDB9DE00F7C9CD /* BaseCollectionViewCell.swift */; };
 		E6E7725F22CDBAE300F7C9CD /* MujiMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E7725E22CDBAE300F7C9CD /* MujiMenuCell.swift */; };
+		E6E7726122CDFCC900F7C9CD /* DoneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E7726022CDFCC900F7C9CD /* DoneController.swift */; };
+		E6E7726522CE059700F7C9CD /* DoneRootContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E7726422CE059700F7C9CD /* DoneRootContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A0BA390B83745BF511419D2 /* Pods_mujigae_food.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mujigae_food.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE480F8EDD40775A60DDA6BF /* Pods-mujigae.food.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mujigae.food.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mujigae.food/Pods-mujigae.food.debug.xcconfig"; sourceTree = "<group>"; };
 		E6437ED322CCE7D500D701D2 /* mujigae.food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mujigae.food.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6437ED622CCE7D500D701D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6437ED822CCE7D500D701D2 /* FavouriteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteController.swift; sourceTree = "<group>"; };
-		E6437EDB22CCE7D500D701D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E6437EDD22CCE7D800D701D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6437EE022CCE7D800D701D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6437EE222CCE7D800D701D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +61,9 @@
 		E6E7725A22CDB7CE00F7C9CD /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		E6E7725C22CDB9DE00F7C9CD /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		E6E7725E22CDBAE300F7C9CD /* MujiMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MujiMenuCell.swift; sourceTree = "<group>"; };
+		E6E7726022CDFCC900F7C9CD /* DoneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneController.swift; sourceTree = "<group>"; };
+		E6E7726422CE059700F7C9CD /* DoneRootContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneRootContainer.swift; sourceTree = "<group>"; };
+		E9A7AB04BEC7CAA2051DA802 /* Pods-mujigae.food.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mujigae.food.release.xcconfig"; path = "Pods/Target Support Files/Pods-mujigae.food/Pods-mujigae.food.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,17 +71,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F5E13DD28F7B4496D018084 /* Pods_mujigae_food.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40DFD57064363447DF80ACA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE480F8EDD40775A60DDA6BF /* Pods-mujigae.food.debug.xcconfig */,
+				E9A7AB04BEC7CAA2051DA802 /* Pods-mujigae.food.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A41C589ED2175D53A408ABDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A0BA390B83745BF511419D2 /* Pods_mujigae_food.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E6437ECA22CCE7D400D701D2 = {
 			isa = PBXGroup;
 			children = (
 				E6437ED522CCE7D500D701D2 /* mujigae.food */,
 				E6437ED422CCE7D500D701D2 /* Products */,
+				40DFD57064363447DF80ACA2 /* Pods */,
+				A41C589ED2175D53A408ABDC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,7 +123,6 @@
 				E6437EE922CCF69800D701D2 /* Controllers */,
 				E6437EE822CCF69100D701D2 /* Models */,
 				E6437ED622CCE7D500D701D2 /* AppDelegate.swift */,
-				E6437EDA22CCE7D500D701D2 /* Main.storyboard */,
 				E6437EE222CCE7D800D701D2 /* Info.plist */,
 			);
 			path = mujigae.food;
@@ -115,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				E6437ED822CCE7D500D701D2 /* FavouriteController.swift */,
+				E6E7726022CDFCC900F7C9CD /* DoneController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -122,13 +148,9 @@
 		E6437EEA22CCF6A300D701D2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E6E7726322CE055D00F7C9CD /* DoneScreen */,
 				E6437EEE22CCFC3300D701D2 /* FavouriteScreen */,
-				E6437EEC22CCFB6C00D701D2 /* BaseView.swift */,
-				E6437EF422CD08B900D701D2 /* MujiButton.swift */,
-				E6E7725022CDAE5500F7C9CD /* MujiHeaderView.swift */,
-				E6E7725822CDB6D700F7C9CD /* MujiCollectionView.swift */,
-				E6E7725C22CDB9DE00F7C9CD /* BaseCollectionViewCell.swift */,
-				E6E7725E22CDBAE300F7C9CD /* MujiMenuCell.swift */,
+				E6E7726222CE054100F7C9CD /* MujiKit */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -145,6 +167,8 @@
 		E6437EEE22CCFC3300D701D2 /* FavouriteScreen */ = {
 			isa = PBXGroup;
 			children = (
+				E6E7725E22CDBAE300F7C9CD /* MujiMenuCell.swift */,
+				E6E7725822CDB6D700F7C9CD /* MujiCollectionView.swift */,
 				E6437EEF22CD01D000D701D2 /* FavouriteRootContainer.swift */,
 			);
 			path = FavouriteScreen;
@@ -174,6 +198,25 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		E6E7726222CE054100F7C9CD /* MujiKit */ = {
+			isa = PBXGroup;
+			children = (
+				E6437EEC22CCFB6C00D701D2 /* BaseView.swift */,
+				E6437EF422CD08B900D701D2 /* MujiButton.swift */,
+				E6E7725022CDAE5500F7C9CD /* MujiHeaderView.swift */,
+				E6E7725C22CDB9DE00F7C9CD /* BaseCollectionViewCell.swift */,
+			);
+			path = MujiKit;
+			sourceTree = "<group>";
+		};
+		E6E7726322CE055D00F7C9CD /* DoneScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E6E7726422CE059700F7C9CD /* DoneRootContainer.swift */,
+			);
+			path = DoneScreen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -181,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6437EE522CCE7D800D701D2 /* Build configuration list for PBXNativeTarget "mujigae.food" */;
 			buildPhases = (
+				794E5B69B5F385592EB659A1 /* [CP] Check Pods Manifest.lock */,
 				E6437ECF22CCE7D500D701D2 /* Sources */,
 				E6437ED022CCE7D500D701D2 /* Frameworks */,
 				E6437ED122CCE7D500D701D2 /* Resources */,
+				B6C7CC0C855DEA1E2C99AE8A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,7 +280,6 @@
 				E6437EE122CCE7D800D701D2 /* LaunchScreen.storyboard in Resources */,
 				E6DFF85722CD14510013116F /* ProximaNova-Light.ttf in Resources */,
 				E6437EDE22CCE7D800D701D2 /* Assets.xcassets in Resources */,
-				E6437EDC22CCE7D500D701D2 /* Main.storyboard in Resources */,
 				E6DFF85422CD14510013116F /* ProximaNova-Black.ttf in Resources */,
 				E6DFF85522CD14510013116F /* ProximaNova-Bold.ttf in Resources */,
 				E6DFF85822CD14510013116F /* ProximaNova-Regular.ttf in Resources */,
@@ -247,6 +291,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		794E5B69B5F385592EB659A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mujigae.food-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6C7CC0C855DEA1E2C99AE8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mujigae.food/Pods-mujigae.food-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mujigae.food/Pods-mujigae.food-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E6437ECF22CCE7D500D701D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -257,6 +350,7 @@
 				E6E7725122CDAE5500F7C9CD /* MujiHeaderView.swift in Sources */,
 				E6E7725F22CDBAE300F7C9CD /* MujiMenuCell.swift in Sources */,
 				E6437EF722CD0C8700D701D2 /* UIViewExtensions.swift in Sources */,
+				E6E7726122CDFCC900F7C9CD /* DoneController.swift in Sources */,
 				E6437EED22CCFB6C00D701D2 /* BaseView.swift in Sources */,
 				E6E7725D22CDB9DE00F7C9CD /* BaseCollectionViewCell.swift in Sources */,
 				E6437ED922CCE7D500D701D2 /* FavouriteController.swift in Sources */,
@@ -265,20 +359,13 @@
 				E6E7725B22CDB7CE00F7C9CD /* MenuItem.swift in Sources */,
 				E6437EF022CD01D000D701D2 /* FavouriteRootContainer.swift in Sources */,
 				E6437EF322CD031C00D701D2 /* UIColorExtensions.swift in Sources */,
+				E6E7726522CE059700F7C9CD /* DoneRootContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E6437EDA22CCE7D500D701D2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E6437EDB22CCE7D500D701D2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E6437EDF22CCE7D800D701D2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -408,6 +495,7 @@
 		};
 		E6437EE622CCE7D800D701D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE480F8EDD40775A60DDA6BF /* Pods-mujigae.food.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -426,6 +514,7 @@
 		};
 		E6437EE722CCE7D800D701D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9A7AB04BEC7CAA2051DA802 /* Pods-mujigae.food.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

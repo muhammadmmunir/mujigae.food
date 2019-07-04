@@ -11,8 +11,9 @@ import UIKit
 class MujiCollectionView: BaseView {
     
     public var menus = [MenuItem]()
-    private var selectedMenus = [MenuItem]()
+    public var selectedMenus = [MenuItem]()
 
+    // MARK: - View Component
     private lazy var menuCollectionView: UICollectionView = {
         let layout = LeftAlignedCollectionViewFlowLayout()
         let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -22,42 +23,7 @@ class MujiCollectionView: BaseView {
         return collection
     }()
     
-    private func populateMenu() {
-        menus.append(MenuItem(name: "Topokki", selected: false))
-        menus.append(MenuItem(name: "Sundubu", selected: false))
-        menus.append(MenuItem(name: "Galbitang", selected: false))
-        menus.append(MenuItem(name: "Beef BBQ", selected: false))
-        menus.append(MenuItem(name: "Korean Fried Chicken", selected: false))
-        menus.append(MenuItem(name: "Bingsoo", selected: false))
-        menus.append(MenuItem(name: "Dakgalbi", selected: false))
-        menus.append(MenuItem(name: "Ramyun", selected: false))
-        menus.append(MenuItem(name: "Anyeong Set 1", selected: false))
-        menus.append(MenuItem(name: "Nori", selected: false))
-        menus.append(MenuItem(name: "Mandu", selected: false))
-        menus.append(MenuItem(name: "Kimchi", selected: false))
-        menus.append(MenuItem(name: "Beef", selected: false))
-        menus.append(MenuItem(name: "Anyeong Set 2", selected: false))
-        menus.append(MenuItem(name: "Choko Bingsoo", selected: false))
-        menus.append(MenuItem(name: "Bokumpbap", selected: false))
-        
-        menus.append(MenuItem(name: "Topokki", selected: false))
-        menus.append(MenuItem(name: "Sundubu", selected: false))
-        menus.append(MenuItem(name: "Galbitang", selected: false))
-        menus.append(MenuItem(name: "Beef BBQ", selected: false))
-        menus.append(MenuItem(name: "Korean Fried Chicken", selected: false))
-        menus.append(MenuItem(name: "Bingsoo", selected: false))
-        menus.append(MenuItem(name: "Dakgalbi", selected: false))
-        menus.append(MenuItem(name: "Ramyun", selected: false))
-        menus.append(MenuItem(name: "Anyeong Set 1", selected: false))
-        menus.append(MenuItem(name: "Nori", selected: false))
-        menus.append(MenuItem(name: "Mandu", selected: false))
-        menus.append(MenuItem(name: "Kimchi", selected: false))
-        menus.append(MenuItem(name: "Beef", selected: false))
-        menus.append(MenuItem(name: "Anyeong Set 2", selected: false))
-        menus.append(MenuItem(name: "Choko Bingsoo", selected: false))
-        menus.append(MenuItem(name: "Bokumpbap", selected: false))
-    }
-    
+    // MARK: Local functions
     private func findSelectedMenus() {
         var tempSelectedMenus = [MenuItem]()
         for menu in menus {
@@ -68,8 +34,8 @@ class MujiCollectionView: BaseView {
         selectedMenus = tempSelectedMenus
     }
     
+    // MARK: - Setup all views
     override func setupViews() {
-        populateMenu()
         registerCustomViews()
         addSubview(menuCollectionView)
         menuCollectionView.anchor(top: topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor)
@@ -81,6 +47,7 @@ class MujiCollectionView: BaseView {
 
 }
 
+// MARK: - CollectionView DataSource, Delegate, and FlowLayout
 extension MujiCollectionView: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -112,6 +79,7 @@ extension MujiCollectionView: UICollectionViewDelegate, UICollectionViewDataSour
     
 }
 
+// MARK: - Custom FlowLayout
 class LeftAlignedCollectionViewFlowLayout: UICollectionViewFlowLayout {
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {

@@ -10,7 +10,7 @@ import UIKit
 
 extension UIView {
     
-    // Use left-right anchor and width-height equalToConstant
+    // MARK: - Use left-right anchor and width-height equalToConstant
     func anchor(top: NSLayoutYAxisAnchor?, left: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, right: NSLayoutXAxisAnchor?, padding: UIEdgeInsets = .zero, size: CGSize = .zero) {
         
         translatesAutoresizingMaskIntoConstraints = false
@@ -36,7 +36,7 @@ extension UIView {
         }
     }
     
-    // Use left-right anchor and center X/Y anchor
+    // MARK: - Use left-right anchor and center X/Y anchor
     func anchorWithCenter(top: NSLayoutYAxisAnchor?, left: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, right: NSLayoutXAxisAnchor?, padding: UIEdgeInsets = .zero, vertical: NSLayoutYAxisAnchor?, horizontal: NSLayoutXAxisAnchor?, size: CGSize = .zero) {
         
         translatesAutoresizingMaskIntoConstraints = false

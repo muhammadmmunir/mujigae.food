@@ -27,6 +27,7 @@ class MujiMenuCell: BaseCollectionViewCell {
         }
     }
     
+    // MARK: - View Component
     private let cellView: UIView = {
         let cell = UIView()
         cell.backgroundColor = .background
@@ -46,6 +47,7 @@ class MujiMenuCell: BaseCollectionViewCell {
         return label
     }()
     
+    // MARK: - Setup All View
     override func setupViews() {
         addSubview(cellView)
         cellView.addSubview(cellTitleLabel)

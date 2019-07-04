@@ -10,6 +10,7 @@ import UIKit
 
 extension UIColor {
     
+    // MARK: - Color Kit
     public class var background: UIColor {
         return UIColor(rgb: 0xFFFFFF)
     }

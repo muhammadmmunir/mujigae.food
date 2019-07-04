@@ -26,6 +26,7 @@ class MujiHeaderView: BaseView {
         }
     }
     
+    // MARK: - View Component
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.init(name: MujiFont.proximaNovaBold, size: 21)

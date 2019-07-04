@@ -10,6 +10,8 @@ import UIKit
 
 class FavouriteRootContainer: BaseView {
     
+    weak var doneDelegate: FavouriteDelegate?
+    
     // MARK: Component View
     private let headerView: MujiHeaderView = {
         let header = MujiHeaderView()
@@ -20,15 +22,18 @@ class FavouriteRootContainer: BaseView {
     
     lazy var collectionView: MujiCollectionView = {
         let collection = MujiCollectionView()
+        collection.menus = [MenuItem]()
         return collection
     }()
     
-    private let doneButton: MujiButton = {
+    public var doneButton: MujiButton = {
         let button = MujiButton()
         button.titleButton = "Done"
+        button.addTarget(self, action: #selector(doneClicked), for: .touchUpInside)
         return button
     }()
 
+    // MARK: - Setup all views
     override func setupViews() {
         backgroundColor = .background
         
@@ -41,6 +46,16 @@ class FavouriteRootContainer: BaseView {
         
         collectionView.anchor(top: headerView.bottomAnchor, left: margins.leftAnchor, bottom: doneButton.topAnchor, right: margins.rightAnchor, padding: UIEdgeInsets(top: 24, left: 15, bottom: 30, right: 15))
         
+    }
+    
+    // MARK: - Button Event
+    @objc private func doneClicked() {
+        let selectedMenu = collectionView.selectedMenus.count
+        if selectedMenu < 3 {
+            doneDelegate?.alertInput(with: "Oops, you still need to choose \(3 - selectedMenu) menu again.")
+        } else {
+            doneDelegate?.didDoneButtonTapped()
+        }
     }
 
 }

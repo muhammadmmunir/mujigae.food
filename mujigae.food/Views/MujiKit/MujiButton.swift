@@ -9,7 +9,7 @@
 import UIKit
 
 class MujiButton: UIButton {
-
+    
     // Set button text
     public var titleButton: String? {
         didSet{

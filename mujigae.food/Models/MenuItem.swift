@@ -9,6 +9,7 @@
 import Foundation
 
 struct MenuItem {
+    var id: Int
     var name: String
     var selected: Bool
 }
