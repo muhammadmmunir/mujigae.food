@@ -1,0 +1,6 @@
+framework module Pods_mujigae_food {
+  umbrella header "Pods-mujigae.food-umbrella.h"
+
+  export *
+  module * { export * }
+}
